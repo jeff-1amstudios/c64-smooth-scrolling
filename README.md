@@ -1,4 +1,4 @@
-# Smooth scrolling screen on Commodore 64
+## Smooth scrolling screen on Commodore 64
 
 Here is some sample code to implement horizontal smooth scrolling on a C64. 
 
@@ -11,7 +11,7 @@ when_graphics_chip_is_at_line_3() {
   }
 }
 
-when_graphics_chip_is_at_vblankk() {
+when_graphics_chip_is_at_vblank() {
    xscroll--;
    if (xscroll == 4) {
       shift_upper_half_of_screen_ram_to_back_buffer();
