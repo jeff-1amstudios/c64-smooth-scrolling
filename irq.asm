@@ -62,7 +62,7 @@ irq_swap_screens
 
                     jsr screen_swap                              ; swap screen to back buffer
                     jsr color_shift_lower                        ; shift lower color ram.
-                    jsr level_render_next_col                    ; draw new column at right edge of screen
+                    jsr level_render_last_col                    ; draw new column at right edge of screen
 
 irq_handler_exit    
                     +set_raster_interrupt START_COPYING_UPPER_COLOR_RAM_LINE, irq_line_65
